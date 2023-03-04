@@ -26,7 +26,7 @@ public class WelcomeController {
     }
 
     @PostMapping("/addusers")
-    public String createUser(@RequestBody User user)
+    public User createUser(@RequestBody User user)
     {
         return db.addUser(user);
     }

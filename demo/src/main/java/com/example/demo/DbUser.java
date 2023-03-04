@@ -27,10 +27,10 @@ public class DbUser {
         return null;
     }
 
-    public String addUser(User user)
+    public User addUser(User user)
     {
         UserTable.add(user);
-        return "success";
+        return user;
 
     }
 
